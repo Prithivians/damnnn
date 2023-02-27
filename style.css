@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 3.5rem);
+}
+
+
+/*Scrollbar*/
+body::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: #111;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+
+/* Nav Bar */
+header {
+    background: linear-gradient(to bottom, #080404, #161111);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* Hamburger */
+.burger {
+    position: absolute;
+    margin-left: 6px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.line {
+    background-color: wheat;
+    width: 26px;
+    height: 2px;
+    margin: 6px 3px;
+}
+
+.seperator {
+    position: absolute;
+}
+
+.line2 {
+    background-color: darkgray;
+    opacity: 0.1;
+    height: 35px;
+    width: 1.7px;
+    margin-left: 54px;
+}
+
+
+/* Logo */
+.llogo {
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+}
+
+.logo {
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    transition: ease-in-out 3s;
+}
+
+.logo:hover {
+    border: 2px solid #395272;
+}
+
+.h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    margin-left: 10px;
+    transition: ease 1s;
+    color: wheat;
+}
+
+.h1:hover {
+    color: rgb(29, 214, 115);
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+
+/* pfp */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 4.7px;
+    z-index: 1;
+}
+
+
+
+
+/* Name Preview */
+.name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0px;
+    color: wheat;
+    margin-right: -10px;
+    opacity: 0;
+    transition: ease 1s;
+    cursor: pointer;
+}
+
+.profile:hover .name {
+    opacity: 1;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Construcion */
+.menusbackground{
+    position: absolute;
+    height: 99.8vh;
+    width: 300px;
+    background: linear-gradient(to bottom, rgb(37, 37, 37), rgb(15, 15, 15));
+    top: 4px;
+    left: 0;
+    border: transparent;
+    border-radius: 8px;
+    z-index: 1;
+    display: none;
+}
+
+.llogoformenus{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 32px;
+    margin-top: 12px;
+}
+
+.lineformenus {
+    background-color: rgb(212, 207, 207);
+    opacity: 0.1;
+    height: 2px;
+    width: 250px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.canclemenus{
+    position: absolute;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    opacity: .7;
+    transition: ease 1s;
+    top: 23px;
+    margin-left: 245px;
+}
+
+.canclemenus:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Profil Card Priview */
+.profileinfo {
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(32, 32, 32));
+    top: 10px;
+    right: 0;
+    border: transparent;
+    border-radius: 8px;
+    display: none;
+}
+
+.profileinfobhitra {
+    background-color: rgb(27, 27, 27);
+    background: linear-gradient(to bottom, rgb(27, 27, 27), rgb(14, 13, 13));
+    height: 373px;
+    width: 288px;
+    max-width: 91%;
+    margin: auto;
+    margin-top: 62px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 4px 2px 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+.profileinfobhitra .p1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    padding-top: 10px;
+    margin: 10px 16px;
+}
+
+.profileinfobhitra .p11 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    padding-top: 10px;
+    margin: 8px 16px;
+}
+
+.profileinfobhitra .p2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin: 10px 18px;
+    opacity: .8;
+}
+
+.line3 {
+    background-color: rgb(212, 207, 207);
+    opacity: 0.1;
+    height: 2px;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/* Profile Cancle Button */
+.cancle {
+    position: absolute;
+    cursor: pointer;
+    margin: 20px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    opacity: .7;
+    transition: ease 1s;
+}
+
+.cancle:hover {
+    opacity: 1;
+}
+
+
+
+/* Socials */
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .6rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 8px 25px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.linki {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* nav-options */
+nav {
+    display: none;
+}
+
+.burger:hover nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.lii {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(54, 158, 102);
+    font-weight: 500;
+    font-size: 19.5px;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #444;
+    color: rgb(18, 189, 98);
+    transform: scale(1.07);
+}
+
+
+
+
+
+
+
+
+/* Test */
+.fortest{
+    background-color: #161111;
+    height: 100vh;
+}
+
+
+
+
+/* Java Script ko for menus */
+@keyframes slide-in {
+    from {
+        transform: translateX(-12%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+/* FOR profileshow ig */
+@keyframes slides-in {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slides-out {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+    /* 383 */
+
+    .logo {
+        height: 31px;
+        width: 31px;
+    }
+
+    .profile {
+        position: absolute;
+        left: 0;
+        margin-left: 23px;
+    }
+
+    .line2 {
+        display: none;
+    }
+
+
+    .llogo {
+        padding-left: 0;
+        margin-top: 4px;
+    }
+
+    .h1 {
+        margin-left: 55px;
+        font-size: 22px;
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+    .burger {
+        right: 0;
+        margin-right: 22px;
+    }
+
+    .line {
+        width: 25px;
+        height: 2px;
+        margin: 5px 3px;
+    }
+
+    .name {
+        display: none;
+    }
+
+    /* Menus */
+    .llogoformenus{
+        padding-left: 40px;
+        margin-top: 15.6px;
+    }
+    
+    .lineformenus {
+        width: 266px;
+        margin-top: 16px;
+    }
+
+    .canclemenus{
+        top: 16px;
+        margin-left: 260px;
+    }
+    
+}
+
+
+
+
+
+
+/* Useless but cool ig */
+@media only screen and (max-width: 1000px) {
+    .name {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .profileinfo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 243px) {
+    header {
+        padding: 24px;
+    }
+
+    .h1 {
+        display: none;
+    }
+}
+
+
